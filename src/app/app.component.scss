@@ -1,10 +1,14 @@
 .menu-toolbar-spacer {
   flex: 1 1 auto;
 }
-.page-heading{
-    text-align: center;
-}
+// .page-heading{
+//     position: absolute;
+//     right: 0;    
+// }
 .footer-toolbar{
     position:fixed;
     bottom: 0;
+}
+.active{
+    background-color: rgba(0,0,0,0.1);
 }

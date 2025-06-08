@@ -1,28 +1,15 @@
-<h1 class="md-headline page-heading">{{title}}</h1>
-<mat-tab-group>
-  <mat-tab label="Home">Home</mat-tab>
-  <mat-tab label="About Me">About Me</mat-tab>
-  <mat-tab label="Experience">Experience</mat-tab>
-  <mat-tab label="Education">Education</mat-tab>
-  <mat-tab label="Awards and Certifications">Awards and Certifications</mat-tab>
-  <mat-tab label="Publication">Publication</mat-tab>
-  <mat-tab label="Contact Me">Contact Me</mat-tab>
-</mat-tab-group>
-<!-- <mat-slide-toggle></mat-slide-toggle> -->
-<mat-toolbar class="footer-toolbar">
-  <button matButton [matMenuTriggerFor]="menu"><mat-icon>more_horiz</mat-icon></button>
-  <mat-menu #menu="matMenu">
-    <button mat-menu-item>Home</button>
-    <button mat-menu-item>About Me</button>
-    <button mat-menu-item>Experience</button>
-    <button mat-menu-item>Education</button>
-    <button mat-menu-item>Contact Me</button>
-  </mat-menu>
-
-  <span class="menu-toolbar-spacer"></span>
-  <button matIconButton>
-    <mat-icon>share</mat-icon>
-  </button>
-
+<mat-toolbar class="mt-toolbar-class">
+<span>{{title}}</span>
+<div class="menu-toolbar-spacer"></div>
+  <button mat-button routerLink="/home" routerLinkActive="active">Home</button>
+  <button mat-button routerLink="/about" routerLinkActive="active">About Me</button>
+  <button mat-button routerLink="/experience" routerLinkActive="active">Experience</button>
+  <button mat-button routerLink="/education" routerLinkActive="active">Education</button>
+  <button mat-button routerLink="/certification" routerLinkActive="active">Awards & Certification</button>
+  <button mat-button routerLink="/publication" routerLinkActive="active">Publications</button>
+  <button mat-button routerLink="/contact" routerLinkActive="active">Contact Me</button>
 </mat-toolbar>
-<router-outlet />
+<mat-toolbar class="footer-toolbar">
+This is common footer
+</mat-toolbar>
+<router-outlet/>
