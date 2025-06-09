@@ -5,7 +5,6 @@ import { ContactComponent } from './contact/contact.component';
 import { EducationComponent } from './education/education.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { CertificationComponent } from './certification/certification.component';
-import { PublicationComponent } from './publication/publication.component';
 
 export const routes: Routes = [
             { path: 'home', component: HomeComponent },
@@ -13,7 +12,6 @@ export const routes: Routes = [
             { path: 'education', component: EducationComponent },
             { path: 'experience', component: ExperienceComponent },
             { path: 'certification', component: CertificationComponent},
-            { path: 'publication', component: PublicationComponent },
             { path: 'contact', component: ContactComponent },
             { path: '', redirectTo: '/home', pathMatch: 'full' },
             { path: '**', redirectTo: '/home' }

@@ -6,10 +6,11 @@
   <button mat-button routerLink="/experience" routerLinkActive="active">Experience</button>
   <button mat-button routerLink="/education" routerLinkActive="active">Education</button>
   <button mat-button routerLink="/certification" routerLinkActive="active">Awards & Certification</button>
-  <button mat-button routerLink="/publication" routerLinkActive="active">Publications</button>
   <button mat-button routerLink="/contact" routerLinkActive="active">Contact Me</button>
 </mat-toolbar>
-<mat-toolbar class="footer-toolbar">
-This is common footer
+ <mat-toolbar class="footer-toolbar footer-toolbar-spacer">
+  <button matIconButton aria-label="icon-button with share icon">
+    <mat-icon>share</mat-icon>
+  </button>
 </mat-toolbar>
 <router-outlet/>
