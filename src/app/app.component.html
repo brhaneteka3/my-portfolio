@@ -8,7 +8,20 @@
   <button mat-button routerLink="/certification" routerLinkActive="active">Awards & Certification</button>
   <button mat-button routerLink="/contact" routerLinkActive="active">Contact Me</button>
 </mat-toolbar>
- <mat-toolbar class="footer-toolbar footer-toolbar-spacer">
+<mat-toolbar class="footer-toolbar">
+  <button matIconButton aria-label="icon-button with facebook icon">
+    <mat-icon><a href="{{this.facebookUrl}}" target="_blank">facebook</a></mat-icon>
+  </button>
+  <button matIconButton aria-label="icon-button with icon">
+    <mat-icon><a href="{{this.xUrl}}" target="_blank"><img src="/assets/icons/png/x.png"/></a></mat-icon>
+  </button>
+  <button matIconButton aria-label="icon-button with github icon">
+    <mat-icon><a href="{{this.githubUrl}}" target="_blank"><img src="/assets/icons/png/github.png"/></a></mat-icon>
+  </button>
+  <button matIconButton aria-label="icon-button with github icon">
+    <mat-icon><a href="{{this.oldGithubUrl}}" target="_blank"><img src="/assets/icons/png/github.png"/></a></mat-icon>
+  </button>
+  <div class="footer-toolbar-spacer"></div>
   <button matIconButton aria-label="icon-button with share icon">
     <mat-icon>share</mat-icon>
   </button>
