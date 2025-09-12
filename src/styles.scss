@@ -2,3 +2,19 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.main-mt-card{
+    margin: 5px;
+}
+.main-mt-card{
+    background-color: transparent !important;
+    border: none;
+    height: 100%;
+    width: 90%;
+    margin: auto;
+}
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0px;
+}
